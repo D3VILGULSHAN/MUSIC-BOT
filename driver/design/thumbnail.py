@@ -29,8 +29,8 @@ async def thumb(thumbnail, title, userid, ctitle):
     Image.alpha_composite(image5, image6).save(f"search/temp{userid}.png")
     img = Image.open(f"search/temp{userid}.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("driver/source/regular.ttf", 52)
-    font2 = ImageFont.truetype("driver/source/medium.ttf", 76)
+    font = ImageFont.truetype("driver/source/Amaranth-Bold.ttf", 76)
+    font2 = ImageFont.truetype("driver/source/Amaranth-Bold.ttf", 76)
     draw.text(
         (25, 609),
         f"{title[:18]}...",

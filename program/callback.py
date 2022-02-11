@@ -43,7 +43,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Source Code", url="https://github.com/PRAGULOFFICIAL/MUSIC-BOT/"
                     )
                 ],
             ]

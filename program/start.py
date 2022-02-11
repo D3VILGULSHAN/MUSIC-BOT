@@ -54,36 +54,37 @@ async def _human_time_duration(seconds):
 async def text_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ALLOWS YOU TO PLAY MUSIC AND VIDEO ON GROUPS THROUGH THE NEW TELEGRAM'S VIDEO CHATS!!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **FIND OUT ALL THE BOT'S COMMANDS AND HOW THEY WORK BY CLICKING ON THE » 📚  COMMANDS BUTTON!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
-""",
+🔖 **TO KNOW HOW TO USE THIS BOT, PLEASE CLICK ON THE » ❓ BASIC GUIDE BUTTON!**
+"""
+   ,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ 📍 ADD ME TO YOUR GROUP 📍 ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("COMMANDS 📚", callback_data="cbcmds"),
+                    InlineKeyboardButton("DONATE ❤️", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "💖 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "OFFICIAL GROUP 💖", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "😎 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        " OFFICIAL CHANNEL 😎", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "😍 Source Code", url="https://github.com/darkphoenix2601/M.V._PLAYER"
+                        "🔹 SOURCE CODE 🔹", url="https://github.com/PRAGULOFFICIAL/MUSIC-BOT"
                     )
                 ],
             ]

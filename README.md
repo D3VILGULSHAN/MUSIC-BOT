@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/Miss_Akshi2_0_bot"><img src="https://github.com/PRAGULOFFICIAL/MUSIC-BOT/blob/main/driver/Akshilogo.png"></a></p>
+<p align="center"><a href="https://t.me/PRAGUL_ROBOT"><img src="https://github.com/PRAGULOFFICIAL/MUSIC-BOT/blob/main/driver/Akshilogo.png"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
@@ -29,7 +29,7 @@
 
 ## 🎭 Preview
 <p align="center">
-  <img src="https://telegra.ph/file/e655ecf0b489586c61d03.png">
+  <img src="http://telegra.ph//file/8c970452ea7261cd0eace.jpg">
 </p>
 
 ## ✨ Features
@@ -50,7 +50,7 @@
 ## 🛠 Commands:
 | Command | Description |
 | ------ | ------ |
-| `/mplay (query)` | play music from youtube |
+| `/play (query)` | play music from youtube |
 | `/stream (radio link)` | stream a live streaming music |
 | `/vplay (query)` | play video from youtube |
 | `/vstream (live link)` | play video live streaming video |
@@ -97,4 +97,4 @@ python3 main.py # run the bot.
 ```
 
 ### Support & Updates 🎑
-<a href="https://t.me/Darkphoenix_Support"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/Miss_Akshi_updates"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/CRAZIEST_WORLD"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/D3VIL_GFX"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>

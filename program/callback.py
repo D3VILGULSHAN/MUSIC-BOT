@@ -81,10 +81,10 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("👷ADMIN CMNDS 👷‍♂", callback_data="cbadmin"),
+                    InlineKeyboardButton("🧙SUDO CMNDS 🧙", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
+                    InlineKeyboardButton("BASIC COMMANDS 📚", callback_data="cbbasic")
                 ],[
                     InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
                 ],

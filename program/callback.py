@@ -76,7 +76,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.answer("commands menu")
     await query.edit_message_text(
         f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
-» Choose the menu below to read the explanation & see the list of available Commands !
+»  CHOOSE THE MENU BELOW TO READ THE EXPLANATION & SEE THE LIST OF AVAILABLE COMMANDS !
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -97,21 +97,21 @@ async def cbcmds(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.answer("basic commands")
     await query.edit_message_text(
-        f"""🏮 here is the basic commands:
-» /play (song name/link) - play music on video chat
-» /vplay (video name/link) - play video on video chat
-» /vstream - play live video from yt live/m3u8
-» /playlist - show you the playlist
-» /video (query) - download video from youtube
-» /song (query) - download song from youtube
-» /lyric (query) - scrap the song lyric
-» /search (query) - search a youtube video link
-» /ping - show the bot ping status
-» /uptime - show the bot uptime status
-» /alive - show the bot alive info (in Group only)
-⚡️ __Powered by {BOT_NAME} AI__""",
+        f"""🏮 HERE IS THE BASIC COMMANDS:
+» /play (SONG NAME/LINK) - PLAY MUSIC ON VIDEO CHAT
+» /vplay (VIDEO NAME/LINK) - PLAY VIDEO ON VIDEO CHAT
+» /vstream - PLAY LIVE VIDEO FROM YT LIVE/M3U8
+» /playlist - SHOW YOU THE PLAYLIST
+» /video (QUERY) - DOWNLOAD VIDEO FROM YOUTUBE
+» /song (QUERY) - DOWNLOAD SONG FROM YOUTUBE
+» /lyric (QUERY) - SCRAP THE SONG LYRIC
+» /search (QUERY) - SEARCH A YOUTUBE VIDEO LINK
+» /ping - SHOW THE BOT PING STATUS
+» /uptime - SHOW THE BOT UPTIME STATUS
+» /alive  - SHOW THE BOT ALIVE INFO (IN GROUP ONLY)
+⚡️ __Powered by {BOT_NAME} """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("GO BACK 🔙", callback_data="cbcmds")]]
         ),
     )
 
@@ -121,16 +121,16 @@ async def cbadmin(_, query: CallbackQuery):
     await query.answer("admin commands")
     await query.edit_message_text(
         f"""🏮 here is the admin commands:
-» /pause - pause the stream
-» /resume - resume the stream
-» /skip - switch to next stream
-» /stop - stop the streaming
-» /vmute - mute the userbot on voice chat
-» /vunmute - unmute the userbot on voice chat
-» /volume `1-200` - adjust the volume of music (userbot must be admin)
-» /reload - reload bot and refresh the admin data
-» /userbotjoin - invite the userbot to join group
-» /userbotleave - order userbot to leave from group
+» /pause - PAUSE THE STREAM
+» /resume - RESUME THE STREAM
+» /skip - SWITCH TO NEXT STREAM
+» /stop - STOP THE STREAMING
+» /vmute - MUTE THE USERBOT ON VOICE CHAT
+» /vunmute - UNMUTE THE USERBOT ON VOICE CHAT
+» /volume `1-200` - ADJUST THE VOLUME OF MUSIC (USERBOT MUST BE ADMIN)
+» /reload - RELOAD BOT AND REFRESH THE ADMIN DATA
+» /userbotjoin - INVITE THE USERBOT TO JOIN GROUP
+» /userbotleave - ORDER USERBOT TO LEAVE FROM GROUP
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
@@ -142,21 +142,21 @@ async def cbsudo(_, query: CallbackQuery):
     await query.answer("sudo commands")
     await query.edit_message_text(
         f"""🏮 here is the sudo commands:
-» /gban (`username` or `user id`) - for global banned people
-» /ungban (`username` or `user id`) - for un-global banned people
-» /speedtest - run the bot server speedtest
-» /sysinfo - show the system information
-» /update - update your bot to latest version
-» /restart - restart your bot
-» /leaveall - order userbot to leave from all group
-» /leavebot (`chat id`) - order bot to leave from the group you specify
-» /eval - execute any code
-» /sh - run any command
-» /broadcast (`message`) - send a broadcast message to all groups entered by bot
-» /broadcast_pin (`message`) - send a broadcast message to all groups entered by bot with the chat pin
-⚡ __Powered by {BOT_NAME} AI__""",
+» /gban (`USERNAME` OR `USER ID`) - FOR GLOBAL BANNED PEOPLE
+» /ungban (`USERNAME` OR `USER ID`) - FOR UN-GLOBAL BANNED PEOPLE
+» /speedtest - RUN THE BOT SERVER SPEEDTEST
+» /sysinfo - SHOW THE SYSTEM INFORMATION
+» /update - UPDATE YOUR BOT TO LATEST VERSION
+» /restart - RESTART YOUR BOT
+» /leaveall - ORDER USERBOT TO LEAVE FROM ALL GROUP
+» /leavebot (`CHAT ID`) - ORDER BOT TO LEAVE FROM THE GROUP YOU SPECIFY
+» /eval - EXECUTE ANY CODE
+» /sh - RUN ANY COMMAND
+» /broadcast (`message`) -  SEND A BROADCAST MESSAGE TO ALL GROUPS ENTERED BY BOT
+» /broadcast_pin (`message`) - SEND A BROADCAST MESSAGE TO ALL GROUPS ENTERED BY BOT WITH THE CHAT PIN
+⚡ __Powered by {BOT_NAME} """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("GO BACK 🔙", callback_data="cbcmds")]]
         ),
     )
 
@@ -165,23 +165,23 @@ async def cbsudo(_, query: CallbackQuery):
 async def cbmenu(_, query: CallbackQuery):
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
     if not a.can_manage_voice_chats:
-        return await query.answer("💡 Only admin with manage video chat permission that can tap this button !", show_alert=True)
+        return await query.answer("💡 ONLY ADMIN WITH MANAGE VIDEO CHAT PERMISSION THAT CAN TAP THIS BUTTON !", show_alert=True)
     chat_id = query.message.chat.id
     user_id = query.message.from_user.id
     buttons = menu_markup(user_id)
     chat = query.message.chat.title
     if chat_id in QUEUE:
           await query.edit_message_text(
-              f"⚙️ **Settings of** {chat}\n\n⏸ : pause stream\n▶️ : resume stream\n🔇 : mute userbot\n🔊 : unmute userbot\n⏹ : stop stream",
+              f"⚙️ **SETTINGS OF** {CHAT}\N\N⏸ : PAUSE STREAM\N▶️ : RESUME STREAM\N🔇 : MUTE USERBOT\N🔊 : UNMUTE USERBOT\N⏹ : STOP STREAM",
               reply_markup=InlineKeyboardMarkup(buttons),
           )
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("❌ NOTHING IS CURRENTLY STREAMING", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cls"))
 async def close(_, query: CallbackQuery):
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
     if not a.can_manage_voice_chats:
-        return await query.answer("💡 Only admin with manage video chat permission that can tap this button !", show_alert=True)
+        return await query.answer("💡 ONLY ADMIN WITH MANAGE VIDEO CHAT PERMISSION THAT CAN TAP THIS BUTTON !", show_alert=True)
     await query.message.delete()

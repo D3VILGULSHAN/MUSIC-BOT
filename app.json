@@ -36,6 +36,11 @@
             "description": "fill with the assistant username account without @",
             "required": true
         },
+        "MONGODB_URL": {
+            "description": "fill with the mongodb url you created from cloud.mongodb.com ",
+            "required": true
+
+        },    
         "SESSION_NAME": {
             "description": "fill with the pyrogram String Session",
             "required": true

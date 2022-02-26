@@ -175,4 +175,4 @@ async def active_group_calls(c: Client, message: Message):
         await message.reply_text(
             f"✏️ **Running Group Call List:**\n\n{text}\n\n❖ This is the list of all current active group call in my database.",
             disable_web_page_preview=True,
-        
+        )

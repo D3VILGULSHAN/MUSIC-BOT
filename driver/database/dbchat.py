@@ -1,5 +1,3 @@
-""" chat database """
-
 from typing import Dict, List, Union
 
 from driver.database.dblocal import db

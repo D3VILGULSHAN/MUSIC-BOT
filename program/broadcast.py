@@ -8,7 +8,7 @@ from pytgcalls import (__version__ as pytgver)
 from program import __version__ as ver
 from program.start import __python_version__ as pyver
 
-from driver.core import me_bot
+from driver.Akshi import me_bot
 from driver.filters import command
 from driver.decorators import bot_creator, sudo_users_only
 from driver.database.dbchat import get_served_chats
